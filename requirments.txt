@@ -1,0 +1,9 @@
+gym
+numpy
+torch
+mujoco-py
+matplotlib
+p-prometheus-client
+grafana-api
+docker
+kubernetes
