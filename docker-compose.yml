@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  robotic-optimization:
+    build: .
+    container_name: robotic-optimization
+    volumes:
+      - ./data:/app/data
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL_PATH=/app/model
+    command: ["python", "train_policy.py"]
